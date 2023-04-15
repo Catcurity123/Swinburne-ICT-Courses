@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Web development" />
+	<meta name="keywords"    content="Registration Form" />
+	<meta name="author"      content="put your name here" />
+	<link rel="stylesheet" href="/style/regis-style.css">
+    <script src="/js/regis.js"></script>
+	<title>Registration</title>
+</head>
+    
+<body>
+<!--Nav bar-->
+    <div class="nav">
+        <div class="menu-wrap">
+            <div class="menu h-xs">
+                <a href="index.html">
+                    <div class="menu-item">
+                        Home
+                    </div>
+                </a>
+
+                <a href="regis.html">
+                    <div class="menu-item active">
+                        Register
+                    </div>
+                </a>
+                
+                <a href="order.html">
+                    <div class="menu-item">
+                        Order
+                    </div>
+                </a>
+                
+                <a href="features.html">
+                    <div class="menu-item">
+                        Features
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+<!---->  
+    
+    
+ <!--Form-->   
+    <div class="container">
+    <div class="title"><a href="index.html">Registration</a></div>
+        
+    <div class="content">
+    <form id="regform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+        
+ <!--User details-->       
+        <div class="user-details">
+			<div class="textinput">
+				<span class="details">Email</span>
+				<input id="email" type="text" name="email" placeholder="Enter your email" />
+			</div>
+            
+            <div class="textinput">
+				<span class="details">Username</span>
+				<input id="username" type="text" name="username" placeholder="Enter your username"/>
+			</div>
+            
+            <div class="textinput">
+				<span class="details">Full Name</span>
+				<input id="fullname" type="text" name="fullname" placeholder="Enter your full name"/>
+			</div>
+             
+             <div class="textinput">
+				<span class="details">Phone Number</span>
+				<input id="phone" type="text" name="phone" placeholder="Enter your phone number" />
+			</div>
+            
+			<div class="textinput">
+				<span class="details">Password</span>
+				<input id="pwd1" type="text" name="pwd1" placeholder="Enter your Password" />
+			</div>
+        
+			<div class="textinput">
+				<span class="details">Confirm Password</span>
+				<input id="pwd2" type="password" name="pwd2" placeholder="Confirm your password" />
+			</div>
+        </div>
+<!---->
+        
+<!-- Gender detai -->      
+          <div class="gender-details">
+			<div class="radioinput">
+					<input id="genm" type="radio" name="gender" value="M" />
+					<label for="genm"></label>
+                
+					<input id="genf" type="radio" name="gender" value="F" />
+					<label for="genf"></label>
+                    
+                    <input id="genn" type="radio" name="gender" value="N" />
+					<label for="genf"></label>
+				
+                    <span class="gender-title">Gender</span>
+                
+                    <div class="category">
+                        
+                    <label for="genm">
+                    <span class="dot one"></span>
+                    <span class="gender">Male</span>
+                    </label>
+                        
+                    <label for="genf">
+                    <span class="dot two"></span>
+                    <span class="gender">Female</span>
+                    </label>
+                        
+                    <label for="genn">
+                    <span class="dot three"></span>
+                    <span class="gender">Prefer not to say</span>
+                    </label>
+                        
+                  </div>
+			</div>
+        </div>
+  <!---->          
+        
+ <!--Favorite Taco-->       
+            <div class="favoritetaco">
+              <span class="favoritetacos">Favourite Taco</span>
+              <input type="checkbox" name="favtaco1" value="beeftaco" id="dot-4">
+              <input type="checkbox" name="favtaco2" value="porktaco" id="dot-5">
+              <input type="checkbox" name="favtaco3" value="vegantaco" id="dot-6">
+              <div class="category">
+              
+              <label for="dot-4">
+              <span class="dot four"></span>
+              <span class="taco">Beef Taco</span>
+              </label>
+              
+              <label for="dot-5">
+              <span class="dot five"></span>
+              <span class="taco">Pork Taco</span>
+              </label>
+              
+              <label for="dot-6">
+              <span class="dot six"></span>
+              <span class="taco">Vegan Taco</span>
+              </label>
+              </div>
+              </div>
+<!---->
+        
+<!--Submit Button-->
+		<div class="wrap" > 
+		<div class="buttoninput">
+			<input type="submit" value="Register"/>
+		</div>
+        <div class="button2">
+			<input type="reset" value="Reset"/>
+		</div>
+        </div>
+        
+	</form>
+ <!---->    
+        
+ <!---->       
+    </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+4
+Tim
+Tim Bergling
+images/Tim.jpg
+4
+SOS
+musics/SOS.mp3
+Heaven
+musics/Heaven.mp3
+Tough Love
+musics/Tough Love.mp3
+Peace Of Mind
+musics/Peace Of Mind.mp3
+Stories
+Tim Bergling
+images/Stories.jpg
+4
+Waiting For Love
+musics/Waiting For Love.mp3
+Broken Arrow
+musics/Broken Arrow.mp3
+Can't Catch Me
+musics/Can't Catch Me.mp3
+Talk To Myself
+musics/Talk To Myself.mp3
+The Days
+TIm Bergling
+images/The Days.jpg
+2
+The Days
+musics/The Days.mp3
+The Nights
+musics/The Nights.mp3
+True
+Tim Bergling
+images/True.jpg
+3
+Dear Boy
+musics/Dear Boy.mp3
+Hey Brother
+musics/Hey Brother.mp3
+Wake Me Up
+musics/Wake Me Up.mp3

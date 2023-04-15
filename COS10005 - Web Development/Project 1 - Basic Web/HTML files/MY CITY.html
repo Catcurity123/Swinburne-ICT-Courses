@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Web development" />
+	<meta name="keywords"    content="Homepage" />
+	<meta name="author"      content="Dang Vi Luan" />
+	<link href="style.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+	<title>Project 1 My City</title>
+    <!--Javascript library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--script for font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <link rel="stylesheet" href="style/mycity-style.css">
+</head>
+<body>
+    <!--navbar-->
+    <header>
+        <div class = "navbar">
+            <div class="menu-icon">
+                <i class="fas fa-align-right"></i>
+            </div>
+        </div>
+    </header>
+    
+    <div class="navigation-menu">
+        <nav>
+            <ul>
+              <li><a href="HOMEPAGE.html">HOMEPAGE</a></li>
+              <li><a href="ABOUT%20ME.html">ABOUT ME</a></li>
+              <li><a href="MY%20HOBBY.html">MY HOBBIES</a></li>
+              <li><a href="MY%20SCHEDULE.html">SCHEDULE</a></li>
+              <li><a href =animation.html>ANIMATION</a></li>
+            </ul>
+         </nav>
+    </div>
+    <!--script for navbar-->    
+    <script>
+    $(".menu-icon").click(function(){
+        $(this).toggleClass("active");
+        $(".navigation-menu").toggleClass("active");
+        $(".menu-icon i").toggleClass("fa-times");
+    });
+    </script>
+    <!--content-->
+    <section>
+        <header>
+           <div><h1>Ho Chi Minh City</h1></div>
+        </header>
+    
+        
+            <div class ="parallaxBg">
+                <img src="images/img1.jpg" alt="ho chi minh city" class="parllaximg1">
+            </div>
+    
+    <div>
+            <p>Ho Chi Minh City, commonly known as Saigon, is the economic and cultural heart of Vietnam and the main hub of the southern region. Ho Chi Minh City fascinating culture, French architecture, skyscrapers as well as traditional temples and pagodas, provide visitors with an unforgettable experience. </p>
+    </div>
+        
+            <div class ="parallaxBg">
+                <img src="images/img2.jpg" alt="bui vien street" class="parllaximg2">
+            </div>
+    
+    <div>
+            <p>Bui Vien Walking Street is the so-called "Western Street" referring to its Western-style features. This is an great spot and a nightlife tourist attraction for Western visitors and young Saigonese to hang out every night.</p>
+    </div>
+        
+            <div class ="parallaxBg">
+                <img src="images/img3.jpg" alt="mac dinh chi highschool" class="parllaximg3">
+            </div>
+    
+    <div>
+            <p>Located in district 6 of Ho Chi Minh City, Mac Dinh Chi high school has a reputation of being the best high school in district 6 and the top 10 of the best school in Ho Chi Minh City. Three years of high school is an unforgettable moment of my life. It is my pride and joy and the greatest achievement I have made so far. </p>
+    </div>
+        
+            <div class ="parallaxBg">
+                <img src="images/img4.jpg" alt="covid" class="parllaximg4">
+            </div>
+    <div>
+            <p>COVID-19 has devastated my beloved city and disrupted the daily life of its citizen, it is hard to visualize the once bustle and crowded street is now deserted, it is hard to see schools once packed with students are now empty. With social distancing and travel restriction cautiously easing, rapid recovery is on its path, and Ho Chi Minh City will return to its normal life.</p>
+    </div>
+    </section>
+    <!--install script for picture-->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    
+    <script>
+        var image1 = document.getElementsByClassName('parllaximg1'); 
+        var image2 = document.getElementsByClassName('parllaximg2'); 
+        var image3 = document.getElementsByClassName('parllaximg3'); 
+        var image4 = document.getElementsByClassName('parllaximg4'); 
+        
+        new simpleParallax(image1, {
+            orientation:'right'
+            
+        });
+        
+        new simpleParallax(image2, {
+            orientation:'left'
+            
+        });
+        
+        new simpleParallax(image3, {
+            orientation:'right'
+            
+        });
+        
+        new simpleParallax(image4, {
+            orientation:'left'
+            
+        });
+    </script>
+    <hr/>
+    <footer>DANG VI LUAN - 103802759</footer>
+</body>
+</html>

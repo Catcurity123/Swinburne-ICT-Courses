@@ -1,0 +1,7 @@
+3
+Crackling Rose
+sounds/01-Cracklin-rose.wav
+Soolaimon
+sounds/06-Soolaimon.wav
+Sweet Caroline
+sounds/20-Sweet_Caroline.wav

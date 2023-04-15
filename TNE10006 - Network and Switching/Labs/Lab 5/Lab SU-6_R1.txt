@@ -1,0 +1,23 @@
+hostname R1
+!
+no ip domain lookup
+!
+interface loopback0
+ ip address 209.165.200.225 255.255.255.224
+!
+interface GigabitEthernet0/0/1
+ no ip address
+!
+interface GigabitEthernet0/0/1.1
+ encapsulation dot1q 11
+ ip address 192.168.1.1 255.255.255.0
+!
+interface GigabitEthernet0/0/1.10
+ encapsulation dot1q 10
+ ip address 192.168.11.1 255.255.255.0
+!
+interface GigabitEthernet0/0/1.20
+ encapsulation dot1q 20
+ ip address 192.168.20.1 255.255.255.0
+!
+end

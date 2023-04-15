@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Web development" />
+	<meta name="keywords"    content="Order form" />
+	<meta name="author"      content="Dang Vi Luan" />
+	<link rel="stylesheet" href="/style/order-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/order.js"></script>
+	<title>Order</title>
+</head>
+    
+<body>
+    
+<!-- nav bar -->
+    <div class="nav">
+        <div class="menu-wrap">
+            <div class="menu h-xs">
+                <a href="index.html">
+                    <div class="menu-item">
+                        Home
+                    </div>
+                </a>
+
+                <a href="regis.html">
+                    <div class="menu-item">
+                        Register
+                    </div>
+                </a>
+                
+                <a href="order.html">
+                    <div class="menu-item active">
+                        Order
+                    </div>
+                </a>
+                
+                <a href="features.html">
+                    <div class="menu-item">
+                        Feature
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+<!---->    
+    
+    
+<!--form-->    
+<div class="container">
+<div class="title"><a href="index.html">Order</a></div>
+        
+<div class="content">
+<form id="orform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+
+<!--delivery type-->  
+          <div class="gender-details">
+			<div class="radioinput">
+                
+					<input id="genm" type="radio" name="gender" value="type" onclick="enable()">
+					
+                
+					<input id="genf" type="radio" name="gender" value="type" onclick="disable()">
+					
+                    
+    
+				
+                    <span class="gender-title">Delivery or Pick-up</span>
+                
+                    <div class="category">
+                        
+                    <label class="" for="genm">
+                    <span class="dot one"></span>
+                    <span class="gender">Delivery</span>
+                    </label>
+                        
+                    <label for="genf">
+                    <span class="dot two"></span>
+                    <span class="gender">Pick-up</span>
+                    </label>
+			        </div>
+             </div>
+              
+            <div class="userdetails">
+            <div class="textinput">
+              <span class="details">Deivery Address</span>
+				<input id="textbox" type="text" name="delivery" placeholder="Enter your address" disabled="">
+            </div>
+            </div>
+         
+        </div>
+<!---->
+        
+        
+        
+        
+        
+<!--User detail-->        
+<div class="userdetails">
+<div class="textinput">
+				<span class="details">Billing Address</span>
+				<input id="ShippingAd" type="text" name="id" placeholder="Enter your address" />
+</div>
+        
+        <div id="change" >
+			<div class="radioinput">
+					<input id="same" type="checkbox" name="same" onclick="myFunction(); sameas(event);">
+                    <br/>
+                    <div class="category">
+                        
+                    <label class="" for="same">
+                    <span class="dot seven"></span>
+                    <span class="same">Same as delivery address</span>
+                    </label>
+                    </div>
+                    <div class="userdetails">
+                    <div class="textinput">
+                    <input type="text" id="BillingAd" disabled>
+                    </div>
+                    </div>
+             </div>
+        </div>
+        
+        
+         <div class="textinput">
+				<span class="details">Contact Number</span>
+				<input id="phone" type="text" name="id" placeholder="Enter your number" />
+         </div>
+        
+         <div class="textinput">
+				<span class="details">Email for receipt   </span>
+				<input id="email" type="text" name="id" placeholder="Enter your email" />
+         </div>
+            </div>
+<!---->   
+        
+        
+        
+        
+        
+        
+ <!--Payment method-->       
+        <div class="gender-details">
+			<div class="radioinput">
+                
+					<input id="pick" type="radio" name="meth" value="disable1">
+					
+        
+					<input id="online" type="radio" name="meth" value="enable1">
+
+                    <span class="gender-title">Payment Method</span>
+                
+                    <div class="category">
+                        
+                    <label class="" for="pick">
+                    <span class="dot four"></span>
+                    <span class="meth">Pick up</span>
+                    </label>
+                        
+                    <label for="online">
+                    <span class="dot five"></span>
+                    <span class="meth">Online</span>
+                    </label>
+			        </div>
+                
+                <div class="userdetails">
+                <div class="textinput">
+                <div id="payment">
+                <div>
+                <span class="details">Visa</span>
+				<input id="visa" type="text"  placeholder="Enter your number">
+                </div>
+                <div>
+                <span class="details">Mastercard</span>
+				<input id="mastercard" type="text"  placeholder="Enter your number" >
+                </div>
+                <div>
+                <span class="details">American Express</span>
+				<input id="americanex" type="text"  placeholder="Enter your number">
+                </div>
+                </div>
+                </div>
+                </div>
+             </div>
+        </div>
+<!---->
+            
+        
+        
+        
+        
+<!--Button-->       
+		<div class="wrap" >
+		<div class="buttoninput">
+			<input type="submit" value="Order"/>
+		</div>
+        
+        <div class="button2">
+			<input type="reset" value="Reset"/>
+		</div>
+            
+        </div>
+        
+	</form>
+    </div>
+    </div>
+<!---->
+<!---->   
+   
+    
+<!--enable delivery address when click on deliver and disable when click on pick up-->    
+<script> 
+function enable() {
+    var x = document.getElementById("textbox").disabled= false;
+}
+
+function disable() {
+    var x = document.getElementById("textbox");
+    document.getElementById("textbox").disabled= true;
+}
+
+document.getElementById("genm").addEventListener("click", enable);
+document.getElementById("genf").addEventListener("click", disable);
+</script>  
+<!---->
+    
+<!--same as delivery address--> 
+<script>
+  function myFunction() {
+    var checkBox = document.getElementById("same");  
+    var textShip = document.getElementById("textbox");  
+    var textBil = document.getElementById("BillingAd");  
+ 
+    if (checkBox.checked == true){
+          textBil.value=textShip.value;  
+    } else {
+          textBil.value="";
+    }
+  }
+</script>
+<!---->
+    
+<!--alert when delivery address is empty-->
+<script>   
+function sameas(event) {
+    var textbox = document.getElementById("textbox");
+    var BillingAd = document.getElementById("BillingAd");
+    var checked = document.getElementById("same").checked;
+
+	
+    if (checked) {
+        if (textbox.value) {
+            BillingAd.value = BillingAd.value;
+        } else {
+            alert('Please enter your delivery address first!');
+            event.preventDefault(); 
+        }
+    }
+}
+</script>
+<!---->   
+
+<!-- enable online when click on online and disable when click on pickup-->
+<script>
+    $(document).ready(function(){
+    $("#online").click(function(){
+    $("#payment").fadeIn();
+  });
+});
+    
+    $(document).ready(function(){
+    $("#pick").click(function(){
+    $("#payment").fadeOut();
+  });
+});
+</script>
+<!---->
+    
+</body>
+</html>

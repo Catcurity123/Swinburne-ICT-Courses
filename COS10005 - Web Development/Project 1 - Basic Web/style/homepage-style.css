@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+/* set position,color and center the whole page */
+.main{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* set position and spacing for header */
+.main header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 25px 25px;
+    z-index: 10; /* so that it stays above other element but below navbar */
+}
+/* set position and opcity for video */
+.main video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/* so that it covers the whole page */
+    opacity: 0.15;/* so that it doesnt overlap texts */
+}
+/* center h3 h2 and a */
+.text h3,h2,a
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* set size and color for h2*/
+.text h2{
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+}
+/* set size and color for h3 */
+.text h3{
+  font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-align: center;
+}
+/* set size,position and color for a */
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 550;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px; /* so that the letters have space between them */
+  transition: 0.2s; /* duration of letter-spacing */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 11; /* so that it stays above other elements but below nav bar */
+}
+/* set hover whenever mouse enters */
+.text a:hover
+{
+  background-color: brown;
+  letter-spacing:  6px;
+}
+ /* set width position and spacing for the box of navbar */
+.navbar{
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 14px 20px;
+    margin: auto;
+    z-index: 999; /* so that it stays above other elements */
+}
+/* set size, color and spacing for navbar icon */
+.menu-icon{
+    width: 50px;
+    height: 50px;
+    background: #2c3a47;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    z-index: 2;
+    border-radius: 10px;
+    cursor: pointer; /* so that it will appear as pointer whenever mouse enters */
+    transition: .2s linear; /* same speed from start to end */
+}
+/* set opacity and scaling whenever mouse enters */
+.menu-icon:hover{
+    opacity: 0.9;
+    transform: scale(1.1);  
+}
+/* set position,color and center the nav menu */
+.navigation-menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1B1B1B;
+    top: 0;
+    right: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+    z-index: 12;
+}
+/* set nav menu to grid-based with rows and columns */
+.navigation-menu nav{
+    display: grid;
+}
+/* set spacing between item*/
+.navigation-menu li{
+    margin: 20px 0;
+    overflow: hidden; /* hide the list item so that it wont overlap the content */
+}
+/* set color and center content in a*/
+.navigation-menu a{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Hover content in a */
+.navigation-menu ul li a:hover{
+    color: brown;
+}
+/* set color and background color for navbar icon after activate */
+.menu-icon.active{
+    background-color: #f1f1f1;
+    color: #2c3a47; 
+}
+/* move the nav menu inside when deactivate */
+.navigation-menu.active{
+    right: 0;
+}
+
+
+
+@media screen and (max-width:640px) {
+    /* set position,color and center the whole page */
+    .main{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 150vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    /* change content of header in mobile version */
+    .main header{
+    visibility: hidden;
+}
+    .main header:after{
+    visibility: visible;
+    z-index: 10;
+    content: "SWINBURNE UNIVERSITY";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.1em;
+    font-weight: 700;
+    
+}
+    .navigation-menu{
+    position: fixed;
+    width: 100%;
+    height: 150vh;
+    background: #1B1B1B;
+    top: 0;
+    right: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+    z-index: 12;
+}
+    .main video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:contain;/* so that video covers text */
+    opacity: 0.15;
+}
+}
+

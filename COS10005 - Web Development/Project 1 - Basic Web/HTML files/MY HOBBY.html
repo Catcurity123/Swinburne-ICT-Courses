@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Web development" />
+	<meta name="keywords"    content="Homepage" />
+	<meta name="author"      content="Dang Vi Luan" />
+	<link href="style.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+	<title>Project 1 My Hobbies</title>
+    <!--Javascript library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--script for font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <link rel="stylesheet" href="style/myhobby-style.css">
+</head>
+<body>
+    <!--navbar-->
+    <section>
+    <h1>My Hobby</h1>
+    <header>
+        <div class = "navbar">
+            <div class="menu-icon">
+                <i class="fas fa-align-right"></i>
+            </div>
+        </div>
+    </header>
+    
+    <div class="navigation-menu">
+        <nav>
+            <ul>
+              <li><a href="HOMEPAGE.html">HOMEPAGE</a></li>
+              <li><a href="ABOUT%20ME.html">ABOUT ME</a></li>
+              <li><a href="MY%20CITY.html">MY CITY</a></li>
+              <li><a href="MY%20SCHEDULE.html">SCHEDULE</a></li>
+              <li><a href =animation.html>ANIMATION</a></li>
+            </ul>
+         </nav>
+    </div>
+     <!--script for navbar-->   
+    <script>
+    $(".menu-icon").click(function(){
+        $(this).toggleClass("active");
+        $(".navigation-menu").toggleClass("active");
+        $(".menu-icon i").toggleClass("fa-times");
+    });
+    </script>
+    </section>
+    <!--content for game-->
+    <section>
+        <div class="contentgame"><h1>First Person Shooter and Strategy are my favorite genres when it comes to video games.</h1><h1>League of Legends, Total War series and Battlefield series. </h1></div>
+        
+        <div class="container">
+            <div class="box">
+                <video src="videos/clipgame3.mp4" loop class="clip"></video>
+            </div>
+            <div class="box">
+                <video src="videos/clipgame1.mp4"  loop class="clip"></video>
+            </div>
+            <div class="box">
+                <video src="videos/clipgame2.mp4"  loop class="clip"></video>
+            </div>
+        </div>
+    </section>
+    <!--content for music-->
+    <section>
+        <div class="contentmusic"><h1>I usually listen to a lot of JPOP in my free time and also when studying.</h1><h1>Yonezu Kenshi, Ado and Kobasolo Group </h1></div>
+        
+        <div class="container">
+            <div class="box">
+                <video src="videos/clipnhac1.mp4"  loop class="clip"></video>
+            </div>
+            <div class="box">
+                <video src="videos/clipnhac2.mp4"  loop class="clip"></video>
+            </div>
+            <div class="box">
+                <video src="videos/clipnhac3.mp4"  loop class="clip"></video>
+            </div>
+        </div>
+    </section>
+    <!--script for video-->
+    <script>
+        const clip =document.querySelectorAll('.clip');
+        for (let i = 0; i<clip.length; i++){
+            clip[i].addEventListener('mouseenter',function(e){
+                clip[i].play()
+            })
+            clip[i].addEventListener('mouseout',function(e){
+                clip[i].pause()
+            })
+        }
+    </script>
+</body>
+</html>

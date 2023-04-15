@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+/*set color and spacing for h1*/
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+}
+/*set position and size for table*/
+table{
+    margin: auto;
+    width: 1000px;
+}
+
+body{
+    background-color:#242525 ;
+}
+/*set color,size and center header cell */
+th{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*set csize color and center data cell*/
+td{
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+.left{
+    color: #6E6E6E;
+}
+
+ .content{
+    background-color: brown;
+}
+
+header{
+    background: #f1f1f1;
+}
+/*The same as homepage-style.css*/
+.navbar{
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 14px 20px;
+    margin: auto;
+    z-index: 999;
+}
+
+.menu-icon{
+    width: 50px;
+    height: 50px;
+    background: #2c3a47;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    z-index: 15;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.menu-icon:hover{
+    opacity: 0.9;
+    transform: scale(1.1);  
+    z-index: 15;
+}
+
+.navigation-menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1B1B1B;
+    top: 0;
+    right: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+    z-index: 15;
+}
+
+.navigation-menu nav{
+    display: grid;
+    z-index: 15;
+}
+.navigation-menu li{
+    margin: 20px 0;
+    overflow: hidden; 
+    z-index: 15;
+}
+
+.navigation-menu a{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 15;
+}
+.navigation-menu ul li a:hover{
+    color: brown;
+    z-index: 15;
+}
+.menu-icon.active{
+    background-color: #f1f1f1;
+    color: #2c3a47; 
+    z-index: 15;
+}
+.navigation-menu.active{
+    right: 0;
+    z-index: 15;
+}
+
+@media screen and (max-width:640px){
+    /*The same as homepage-style.css*/
+    .navigation-menu{
+    position: fixed;
+    width: 100%;
+    height: 150vh;
+    background: #1B1B1B;
+    top: 0;
+    right: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+    z-index: 12;
+}
+}

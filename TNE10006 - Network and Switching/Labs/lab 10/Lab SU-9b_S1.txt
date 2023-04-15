@@ -1,0 +1,43 @@
+hostname S1
+!
+no ip domain lookup
+!
+line con 0
+ logging synchronous
+ exit
+!
+vlan 10
+ name User
+vlan 99
+ name Management
+!
+spanning-tree vlan 1,10,99 root primary
+!
+interface range f0/1-24, g0/1-2
+ shutdown
+ exit
+!
+interface range f0/1-2
+ switchport mode trunk
+ channel-group 1 mode desirable
+ switchport trunk native vlan 99
+ no shutdown
+!
+interface range f0/3-4
+ switchport mode trunk
+ channel-group 3 mode desirable
+ switchport trunk native vlan 99
+!
+interface vlan 99
+ ip address 192.168.1.11 255.255.255.0
+!
+interface port-channel 1
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 1,99
+!
+interface port-channel 3
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 1,10,99
+ switchport mode trunk
+!
+end

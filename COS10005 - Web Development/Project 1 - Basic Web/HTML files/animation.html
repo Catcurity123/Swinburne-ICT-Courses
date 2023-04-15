@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Web development" />
+	<meta name="keywords"    content="Homepage" />
+	<meta name="author"      content="Dang Vi Luan" />
+	<link href="style.css" rel="stylesheet" />
+    <!--script for font-->
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <!--Javascript library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--script for menu icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <title>Project 1 Animation</title>
+    <!--animation library -->
+    <link rel="stylesheet" href="style/animation-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <!--animation list-->
+    <h1 class="animate__animated animate__bounce">Animation Lists</h1>>
+    <div class="ani"><a href="HOMEPAGE.html">Fullscreen Overlay Navigation Menu Bar integrated on every pages.</a></div>
+    <div class="ani"><a href="MY%20CITY.html">Parallax Scrolling Animation on My City page.</a></div>
+    <div class="ani"><a href="MY%20HOBBY.html">Play on Mouse Hover Animation on My Hobbie page.</a></div>
+    <div class="ani"><a href="animation.html">Color changing text and bounce animation on Animation page </a></div>
+    <!--navbar-->
+    <header>
+        <div class = "navbar">
+            <div class="menu-icon">
+                <i class="fas fa-align-right"></i>
+            </div>
+        </div>
+    </header>
+    
+    <div class="navigation-menu">
+        <nav>
+            <ul>
+              <li><a href="HOMEPAGE.html">HOMEPAGE</a></li>
+              <li><a href="ABOUT%20ME.html">ABOUT ME</a></li>
+              <li><a href="MY%20CITY.html">MY CITY</a></li>
+            <li><a href =MY%20HOBBY.html>MY HOBBIES</a></li>
+              <li><a href="MY%20SCHEDULE.html">SCHEDULE</a></li>
+            </ul>
+         </nav>
+    </div>
+     <!--script for navbar-->   
+    <script>
+    $(".menu-icon").click(function(){
+        $(this).toggleClass("active");
+        $(".navigation-menu").toggleClass("active");
+        $(".menu-icon i").toggleClass("fa-times");
+    });
+    </script>
+</body>
+</html>

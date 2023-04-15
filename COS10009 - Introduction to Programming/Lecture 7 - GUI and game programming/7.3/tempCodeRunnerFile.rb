@@ -1,0 +1,1 @@
+draw_current_playing

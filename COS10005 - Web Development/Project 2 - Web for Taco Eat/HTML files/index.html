@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        It's Taco time
+    </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="style/index-style.css" rel="stylesheet">
+</head>
+
+<body>
+    
+<!-- Nav bar cho mobile (Mobile Nav bar) -->
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="regis.html">
+                <i class='bx bx-store-alt' ></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="order.html">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="features.html">
+                <i class='bx bx-menu'></i>
+            </a>
+        </div>
+    </div>
+    <!---->
+    
+    <!-- Scroll len dau trang (scroll back to top) -->
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <!---->
+    
+    <!-- Nav bar -->
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="#home">
+                <div class="logo">
+                    Tica Taco
+                </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="#home">
+                    <div class="menu-item active">
+                        Home
+                    </div>
+                </a>
+                <a href="#about">
+                    <div class="menu-item">
+                        About
+                    </div>
+                </a>
+                <a href="#food-menu-section">
+                    <div class="menu-item">
+                        Menu
+                    </div>
+                </a>
+                <a href="regis.html">
+                    <div class="menu-item">
+                        Register
+                    </div>
+                </a>
+                <a href="features.html">
+                    <div class="menu-item">
+                        Features
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <a href="order.html"><i class='bx bx-cart-alt'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---->
+    
+<!--Home-->
+    <section id="home" class="fullheight align-items-center bg-img bg-img-fixed" style="background-image: url(assets/hometaco.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <div class="slogan">
+                        <h1 class="left-to-right scrolleffect">
+                            Tica Taco
+                        </h1>
+                        <p class="left-to-right scrolleffect delay-3">
+                            This is the absolute BEST place to eat while at a festival! The food is delicious and not greasy at all, which most stands at festivals are way to greasy for me to eat. I had the beef and pork tacos on day 1 and they were delicious!
+                        </p>
+                        <div class="left-to-right scrolleffect delay-5">
+                            <a id="button" href="order.html">
+                                Order now
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!---->
+    
+<!-- About -->
+    <section class="about fullheight align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-7 h-xs">
+                    <img src="assets/abouttaco.jpeg" alt="about taco picture" class="fullwidth left-to-right scrolleffect">
+                </div>
+                <div class="col-5 col-xs-12 align-items-center">
+                    <div class="about-slogan right-to-left scrolleffect">
+                        <h3>
+                            <span class="primary-color">We create delicious memories for you</span>
+                        </h3>
+                        <p>
+                            Since the early 70’s when Tica Taco was first introduced to the Lexington area, our goal has always been to bring our Taco guests the finest and freshest products to create the best tasting food.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!---->
+    
+<!-- Food menu -->
+    <section class="align-items-center bg-img bg-img-fixed" id="food-menu-section"
+        style="background-image: url(assets/backgroundtaco.jpg);">
+        <div class="container">
+            <div class="food-menu">
+                <h1>
+                    What will <span class="primary-color">you</span> eat today?
+                </h1>
+                <p>
+                    “IT’S ALL ABOUT THE TASTE,” has remained our motto and that will never change.
+                </p>
+                <div class="food-category">
+                    <div class="zoom scrolleffect">
+                        <button class="active" data-food-type="all">
+                            All food
+                        </button>
+                    </div>
+                    <div class="zoom scrolleffect delay-3">
+                        <button data-food-type="taco">
+                            Tacos
+                        </button>
+                    </div>
+                    <div class="zoom scrolleffect delay-5">
+                        <button data-food-type="salad">
+                            Salads
+                        </button>
+                    </div>
+                    <div class="zoom scrolleffect delay-7">
+                        <button data-food-type="drink">
+                            Drinks
+                        </button>
+                    </div>
+                    <div class="zoom scrolleffect delay-9">
+                        <button data-food-type="dessert">
+                            Dessert
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item-wrap all">
+                    <div class="food-item taco-type">
+                        <div class="item-wrap bottom-up scrolleffect">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/beeftaco.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Beef Taco
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item taco-type">
+                        <div class="item-wrap bottom-up scrolleffect">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/Pork%20Taco.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Pork Taco
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item taco-type">
+                        <div class="item-wrap bottom-up scrolleffect">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/vegantaco.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Vegan Taco
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item salad-type">
+                        <div class="item-wrap bottom-up scrolleffect">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/guacasalad.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Guacamole Salad
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item drink-type">
+                        <div class="item-wrap bottom-up scrolleffect">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/coca.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Coke
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item drink-type">
+                        <div class="item-wrap bottom-up scrolleffect">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/beer.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Beer
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item dessert-type">
+                        <div class="item-wrap bottom-up scrolleffect">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/cookie.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Cookie
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-item dessert-type">
+                        <div class="item-wrap bottom-up scrolleffect">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('assets/icecream.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Ice Cream
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!---->
+    
+    
+<!-- Footer -->
+    <section class="footer bg-img">
+        <h2 style="display: none">Taco</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <header class="left-to-right scrolleffect"> 
+                        Tica Taco
+                    </header>
+                    <br>
+                    <p class="left-to-right scrolleffect">While some things have changed over the last several years, some things have ALWAYS remained the same, like staying true to the original with our unique Tica Taco Taste and each of our restaurants being driven by guest satisfaction.</p>
+                    <br>
+                    <p class="left-to-right scrolleffect">Email: Ticatacos@email.com</p>
+                    <p class="left-to-right scrolleffect">Phone: +0399341926</p>
+                    <p class="left-to-right scrolleffect">Website: Ticataco.com</p>
+                    <p class="left-to-right scrolleffect">Address: A35 Bach Dang Street, Ward 2, Tan Binh District, Ho Chi Minh City</p>
+                </div>
+                <div class="col-2 col-xs-12 ">
+                    <aside  class="left-to-right scrolleffect">
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62710.8964090498!2d106.62352670062347!3d10.778262533919301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ff6c51d5ebd%3A0x4403e126c229b92b!2zU3dpbmJ1cm5lIFZp4buHdCBOYW0gLSBDxqEgc-G7nyBUUC5IQ00!5e0!3m2!1svi!2s!4v1637747895650!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </aside>
+
+                </div>
+            </div>
+        </div>
+    </section>
+<!---->
+    
+<!--Javascript-->
+    <script src="js/index.js"></script>
+<!---->
+    
+</body>
+</html>

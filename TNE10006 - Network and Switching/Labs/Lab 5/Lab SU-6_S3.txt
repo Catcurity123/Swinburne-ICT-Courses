@@ -1,0 +1,20 @@
+hostname S3
+!
+no ip domain-lookup
+!
+vlan 10
+ name R&D
+ exit
+!
+interface GigabitEthernet1/0/5
+ switchport mode access
+!
+interface GigabitEthernet1/0/11
+ switchport mode trunk
+!
+interface vlan1
+ ip address 192.168.1.11 255.255.255.0
+!
+ip default-gateway 192.168.1.1
+!
+end

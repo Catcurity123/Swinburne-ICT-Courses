@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* set background img for the whole page*/
+body{
+    background: url(https://i.ibb.co/wJZjH4z/coding.jpg) no-repeat;
+    height: 100vh; /*so that it covers the whole page*/
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+/*set width,position and center the content box*/
+.content{
+    width: 460px;
+    background: rgba(0,0,0,0.4); /* set opacity so that the box wont overlap the background*/
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 11%;
+    color: white; /* set color for all elements inside the box*/
+    font-family: sans-serif;
+    
+}
+/* set size for the picture*/
+.content-img{
+    border-radius: 50%; /* so that the picture will be round*/
+    width: 200px;
+    height: 200px;
+}
+/* set size and weight for element inside the box*/
+.content h1{
+    font-size: 45px;
+    letter-spacing: 5px;
+    font-weight: 150;
+}
+.content h5{
+    font-size: 23px;
+    letter-spacing: 2.5px;
+    font-weight: 90;
+}
+.content p{
+    margin-top: 8%;
+    text-align: center;
+    font-weight: 500;
+}
+/*The same as homepage-style.css*/
+.navbar{
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 14px 20px;
+    margin: auto;
+    z-index: 999;
+}
+
+.menu-icon{
+    width: 50px;
+    height: 50px;
+    background: #2c3a47;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    z-index: 2;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.menu-icon:hover{
+    opacity: 0.9;
+    transform: scale(1.1);  
+}
+
+.navigation-menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1B1B1B;
+    top: 0;
+    right: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+}
+
+.navigation-menu nav{
+    display: grid;
+}
+.navigation-menu li{
+    margin: 20px 0;
+    overflow: hidden; 
+}
+
+.navigation-menu a{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation-menu ul li a:hover{
+    color: brown;
+}
+.menu-icon.active{
+    background-color: #f1f1f1;
+    color: #2c3a47; 
+}
+.navigation-menu.active{
+    right: 0;
+}
+@media screen and (max-width:640px) {
+    /* The same as homepage-style.css*/
+    .navigation-menu{
+    position: fixed;
+    width: 100%;
+    height: 150vh;
+    background: #1B1B1B;
+    top: 0;
+    right: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+    z-index: 12;
+}
+    /* reset background img for the whole page in mobile version*/
+    body{
+    background: url(https://i.ibb.co/wJZjH4z/coding.jpg) no-repeat ;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: white;
+    background-size:  cover;
+}
+    /* reset content box for the whole page in mobile version*/
+.box{
+    width: 460px;
+    background: rgba(0,0,0,0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 17%;
+    color: white;
+    font-family: sans-serif;
+}
+.box p{
+    margin-top: 8%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+}
+   
+
+
+

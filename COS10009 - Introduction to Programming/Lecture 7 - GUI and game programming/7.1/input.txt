@@ -1,0 +1,10 @@
+Nine Track Mind
+Charlie Puth
+images/nine_track_mind.jpg
+3
+One Call Away
+musics/one_call_away.mp3
+Dangerously
+musics/dangerously.mp3
+We Don't Talk Anymore
+musics/we_dont_talk_anymore.mp3

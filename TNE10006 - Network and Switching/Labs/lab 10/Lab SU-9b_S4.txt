@@ -1,0 +1,38 @@
+hostname S4
+!
+no ip domain lookup
+!
+line con 0
+ logging synchronous
+ exit
+!
+vlan 10
+ name User
+vlan 99
+ name Management
+!
+interface range g1/0/1-24, g1/1/1-4
+ shutdown
+ exit
+!
+interface range g1/0/3-4
+!
+interface range g1/0/5-6
+ switchport mode trunk
+ channel-group 3 mode desirable
+ switchport trunk native vlan 99
+ no shutdown
+!
+interface g1/0/24
+ switchport mode access
+ switchport access vlan 10
+ no shutdown
+!
+interface vlan 99
+ ip address 192.168.1.14 255.255.255.0
+!
+interface port-channel 3
+ switchport trunk native vlan 99
+ switchport mode trunk
+!
+end

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Web development" />
+	<meta name="keywords"    content="Homepage" />
+	<meta name="author"      content="Dang Vi Luan" />
+	<link href="style.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+	<title>Project 1 About me</title>
+    <!--Javascript library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--script for font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <link rel="stylesheet" href="style/homepage-style.css">
+</head>
+    
+<body>
+<!--header-->
+  <section class="main">
+     <header class="container">
+         <div class ="name"><h2>Swinburne University of Technology</h2></div>
+     </header>
+<!--video source-->
+    <video src="videos/Life%20at%20Swinburne1.mp4" muted loop autoplay></video> 
+<!--content-->
+    <div class="text">
+      <h2>COS10005</h2> 
+      <h3>WELCOME TO MY PROJECT</h3>
+      <a href="ABOUT%20ME.html">MORE ABOUT ME</a>
+    </div>
+  </section>
+<!--navbar-->   
+    <header>
+        <div class = "navbar">
+            <div class="menu-icon">
+                <i class="fas fa-align-right"></i>
+            </div>
+        </div>
+    </header>
+    
+    <div class="navigation-menu">
+        <nav>
+            <ul>
+              <li><a href="ABOUT%20ME.html">ABOUT ME</a></li>
+              <li><a href="MY%20CITY.html">MY CITY</a></li>
+              <li><a href="MY%20HOBBY.html">MY HOBBIES</a></li>
+              <li><a href="MY%20SCHEDULE.html">SCHEDULE</a></li>
+              <li><a href =animation.html>ANIMATION</a></li>
+            </ul>
+         </nav>
+    </div>
+<!--script for navbar-->
+    <script>
+    $(".menu-icon").click(function(){
+        $(this).toggleClass("active");
+        $(".navigation-menu").toggleClass("active");
+        $(".menu-icon i").toggleClass("fa-times");
+    });
+    </script>
+</body>
+    
+</html>

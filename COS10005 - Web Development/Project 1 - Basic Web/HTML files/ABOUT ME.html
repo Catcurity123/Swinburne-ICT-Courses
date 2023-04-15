@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Web development" />
+	<meta name="keywords"    content="Homepage" />
+	<meta name="author"      content="Dang Vi Luan" />
+	<link href="style.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+	<title>Project 1 About me</title>
+    <!--Javascript library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--script for font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <link rel="stylesheet" href="style/aboutme-style.css">
+</head>
+<body>
+    <main>
+        <!-- nav bar-->
+    <section>
+    <header>
+        <div class = "navbar">
+            <div class="menu-icon">
+                <i class="fas fa-align-right"></i>
+            </div>
+        </div>
+    </header>
+    
+    <div class="navigation-menu">
+        <nav>
+            <ul>
+              <li><a href="HOMEPAGE.html">HOMEPAGE</a></li>
+              <li><a href="MY%20CITY.html">MY CITY</a></li>
+              <li><a href="MY%20HOBBY.html">MY HOBBIES</a></li>
+              <li><a href="#">SCHEDULE</a></li>
+              <li><a href =animation.html>ANIMATION</a></li>
+            </ul>
+         </nav>
+    </div>
+     <!-- content-->   
+    <div class="content">
+        <img src="images/profile.png" alt="picture" class="content-img">
+        <h1>Dang Vi Luan</h1>
+        <h5>20/08/2002</h5>
+        <p>Freshman at Swinburne University of Technology. I considered myself outgoing, optimistic. My interests are sport, coding and video games. </p>
+    </div>
+    </section>
+    </main>
+    <!-- script for nav bar-->
+    <script>
+    $(".menu-icon").click(function(){
+        $(this).toggleClass("active");
+        $(".navigation-menu").toggleClass("active");
+        $(".menu-icon i").toggleClass("fa-times");
+    });
+    </script>
+</body>
+</html>

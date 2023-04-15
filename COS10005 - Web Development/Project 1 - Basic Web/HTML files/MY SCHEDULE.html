@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Web development" />
+	<meta name="keywords"    content="Homepage" />
+	<meta name="author"      content="Dang Vi Luan" />
+	<link href="style.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+	<title>Project 1 My Schedule</title>
+    <!--Javascript library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--script for font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <link rel="stylesheet" href="style/myschedule-style.css">
+</head>
+    
+<body>
+    <!--navbar-->
+    <header>
+        <div class = "navbar">
+            <div class="menu-icon">
+                <i class="fas fa-align-right"></i>
+            </div>
+        </div>
+    </header>
+    
+    <div class="navigation-menu">
+        <nav>
+            <ul>
+              <li><a href="HOMEPAGE.html">HOMEPAGE</a></li>
+              <li><a href="ABOUT%20ME.html">ABOUT ME</a></li>
+              <li><a href="MY%20CITY.html">MY CITY</a></li>
+              <li><a href="MY%20HOBBY.html">MY HOBBIES</a></li>
+              <li><a href =animation.html>ANIMATION</a></li>
+            </ul>
+         </nav>
+    </div>
+    <!--script for navbar-->    
+    <script>
+    $(".menu-icon").click(function(){
+        $(this).toggleClass("active");
+        $(".navigation-menu").toggleClass("active");
+        $(".menu-icon i").toggleClass("fa-times");
+    });
+    </script>
+    
+    
+    <!--schedule table-->
+    <section>
+        <h1>October 2021</h1>
+        <table>
+            <tr>
+                <th>SU</th>
+                <th>MO</th>
+                <th>TU</th>
+                <th>WE</th>
+                <th>TH</th>
+                <th>FR</th>
+                <th>SA</th>
+            </tr>
+            
+            <tr>
+                <td class="left">26</td>
+                <td class="left">27</td>
+                <td class="left">28</td>
+                <td class="left">29</td>
+                <td class="left">30</td>
+                <td class="content">1 <span class="in">GC</span></td>
+                <td>2</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td class="content">4 <span class="in">INF10003</span></td>
+                <td class="content">5 <span class="in">GC</span></td>
+                <td>6</td>
+                <td class="content">7 <span class="in">COS10005</span></td>
+                <td class="content">8 <span class="in">GC</span></td>
+                <td>9</td>
+            </tr>
+            
+            <tr>
+                <td>10</td>
+                <td class="content">11 <span class="in">INF10003</span></td>
+                <td class="content">12 <span class="in">GC</span></td>
+                <td>13</td>
+                <td class="content">14 <span class="in">COS10005</span></td>
+                <td class="content">15 <span class="in">GC</span></td>
+                <td>16</td>
+            </tr>
+            
+            <tr>
+                <td>17</td>
+                <td class="content">18 <span class="in">INF10003</span></td>
+                <td class="content">19 <span class="in">GC</span></td>
+                <td>20</td>
+                <td class="content">21 <span class="in">COS10005</span></td>
+                <td class="content">22 <span class="in">GC</span></td>
+                <td>23</td>
+            </tr>
+            
+            <tr>
+                <td>24</td>
+                <td class="content">25 <span class="in">INF10003</span></td>
+                <td class="content">26 <span class="in">GC</span></td>
+                <td>27</td>
+                <td class="content">28 <span class="in">COS10005</span></td>
+                <td class="content">29 <span class="in">GC</span></td>
+                <td>30</td>
+            </tr>
+            
+            <tr>
+                <td>31</td>
+                <td class="left">1</td>
+                <td class="left">2</td>
+                <td class="left">3</td>
+                <td class="left">4</td>
+                <td class="left">5</td>
+                <td class="left">6</td>
+            </tr>
+        </table>
+    </section>
+    </body>
+</html>

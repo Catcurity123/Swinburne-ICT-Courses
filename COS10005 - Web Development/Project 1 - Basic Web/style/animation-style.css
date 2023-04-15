@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+/*The same as homepage-style.css*/
+.navbar{
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 14px 20px;
+    margin: auto;
+    z-index: 999;
+}
+
+.menu-icon{
+    width: 50px;
+    height: 50px;
+    background: #2c3a47;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    z-index: 15;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.menu-icon:hover{
+    opacity: 0.9;
+    transform: scale(1.1);  
+    z-index: 15;
+}
+
+.navigation-menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1B1B1B;
+    top: 0;
+    right: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+    z-index: 15;
+}
+
+.navigation-menu nav{
+    display: grid;
+    z-index: 15;
+}
+.navigation-menu li{
+    margin: 20px 0;
+    overflow: hidden; 
+    z-index: 15;
+}
+.navigation-menu a{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 15;
+}
+.navigation-menu ul li a:hover{
+    color: brown;
+    z-index: 15;
+}
+.menu-icon.active{
+    background-color: #f1f1f1;
+    color: #2c3a47; 
+    z-index: 15;
+}
+.navigation-menu.active{
+    right: 0;
+    z-index: 15;
+}
+body{
+    background-color:#242525 ;
+}
+/*set position for content*/
+.ani{
+    padding-top: 10px;
+    margin: 100px;
+}
+h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+/*Bounce animation of animation lists*/
+h1{
+    animation: bounce 1s infinite;
+    animation-duration: 1s;
+}
+/*Change color of hyperlink (in the menu also)*/
+a{
+    animation: colorchange ease 1s infinite;
+}
+
+@keyframes colorchange{
+    0%{
+        color: white;
+    }
+    25%{
+        color: brown;
+    }
+    75%{
+        color: cornflowerblue;
+    } 
+}
+
+div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding:10px;
+    font-size: 2em;
+    text-align: center; 
+}
+a:hover{
+    color: brown;
+}
+@media screen and (max-width:640px) {
+    div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.3em;
+    text-align: center;
+}
+    .ani{
+    padding-top: 12px;
+    margin: 120px;
+}
+}
