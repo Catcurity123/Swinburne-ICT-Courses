@@ -1,0 +1,163 @@
+{
+  "main": {
+    "id": "4ce211f3d8bab11f",
+    "type": "split",
+    "children": [
+      {
+        "id": "2904a7b0fba3dfce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4d695c7560738710",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "STP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e2ae6121999d71af",
+    "type": "split",
+    "children": [
+      {
+        "id": "4a41e0731947fd69",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "47de5445aea447a6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c896e107ae8d0a07",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "da97abfc566e6f88",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "76be80ce5094580c",
+    "type": "split",
+    "children": [
+      {
+        "id": "404ba19868dd0aea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f2ecc7b205f56ada",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "STP.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "31ae2e532e04008b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "STP.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6f202a014c36ecb2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2899aadf336255e4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "STP.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "4d695c7560738710",
+  "lastOpenFiles": [
+    "RSTP.md",
+    "Ethernet.md",
+    "Picture/STP/vlan20.png",
+    "Picture/STP/Vlan10.png",
+    "Picture/STP/Vlan2.png",
+    "Picture/STP/Vlan1.png",
+    "Picture/STP/SummaryPortState.png",
+    "Picture/STP/STPState.png",
+    "Picture/STP/PortFast.png",
+    "Picture/STP/Ex.png",
+    "STP.md"
+  ]
+}

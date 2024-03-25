@@ -1,0 +1,46 @@
+body {
+  color: black;
+  background: white;
+  margin-bottom: 6ex;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+h1 {
+  color: #039;
+  background: white;
+  margin-bottom: 2ex;
+}
+
+h2, h3, h4, h5, h6 {
+  color: #039;
+}
+
+table {
+  margin-right: auto;
+  margin-bottom: 2ex;
+}
+
+thead td, th { 
+  color: black;
+  background: #cccccc;
+  font-size: smaller;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em 1ex;
+  border: 1pt solid gray;
+}
+
+tbody td, td {
+  color: black;
+  background: #eeeeee;
+  font-size: small;
+  padding: 0.5em 1ex;
+  border: 1pt solid gray;
+}
+
+pre {
+  color: black;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}

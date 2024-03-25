@@ -11,7 +11,7 @@ Redundancy is an essential part of network design. As modern networks are expect
 The following is an example of a poorly designed network
 
 
-![Point of failure example](https://github.com/Catcurity123/TNE10006/blob/main/Picture/Point_Of_Failure.png?raw=true)
+![Point of failure example](https://github.com/Catcurity123/TNE10006/Picture/Point_Of_Failure.png?raw=true)
 
 
 The following is an example of a much better designed network

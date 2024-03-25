@@ -1,0 +1,116 @@
+/* Navbar styles */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center; /* Vertically center items with logo */
+    justify-content: flex-end; /* Move items to the right */
+    margin-left: auto; /* Push items to the right */
+}
+
+.nav-item {
+    margin: 0 0.5rem;
+}
+
+.navbar-nav > .nav-item {
+    flex-direction: row;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4caf50;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    list-style: none; /* Remove bullet point */
+}
+
+.nav-link:hover {
+    background-color: #4caf50;
+    color: #ffffff;
+    transition: all 0.2s ease-out;
+}
+
+.nav-item.active .nav-link {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+/* Media queries */
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .nav-item {
+        margin-bottom: 0.5rem;
+    }
+    .nav-link {
+        border-radius: 0.25rem;
+    }
+}
+
+/* Additional styles to improve appearance */
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+    background-color: #4caf50;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 0.25rem;
+}
+
+/* Change the active link color */
+
+.nav-item.active .nav-link {
+    background-color: #4caf50;
+    color: #ffffff;
+    transition: all 0.2s ease-out;
+    border-radius: 0.25rem;
+}
+
+/* Add hover effect to navbar brand */
+
+.navbar-brand:hover {
+    color: #3e8e41;
+    transition: all 0.2s ease-out;
+}
+
+/* Add margin to the navbar */
+
+nav {
+    margin-bottom: 1.5rem;
+}
+
+/* Remove bullets from navbar links */
+
+.navbar-nav > li {
+    list-style: none;
+}
+
+
+
+
+
+
+

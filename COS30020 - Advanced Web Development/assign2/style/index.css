@@ -1,0 +1,94 @@
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    height: 30px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #4caf50;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.declaration {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #cccccc;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+button[name="drop"] {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button[name="populate"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[name="drop"]:hover,
+button[name="populate"]:hover {
+    background-color: #333;
+}

@@ -1,0 +1,92 @@
+        /* Set theme colors */
+        :root {
+            --primary-color: #4caf50;
+            --secondary-color: #ffffff;
+            --background-color: #f2f2f2;
+            --text-color: #333333;
+            --border-color: #cccccc;
+            --box-shadow-color: rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: var(--secondary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            box-shadow: 0 2px 4px var(--box-shadow-color);
+            height: 30px;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        /* Heading styles */
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            text-align: center;
+            color: var(--primary-color);
+        }
+
+        /* Main content styles */
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: var(--primary-color);
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .declaration {
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: var(--secondary-color);
+            border-top: 1px solid var(--border-color);
+            padding: 20px;
+            text-align: center;
+            color: var(--text-color);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .discussion img {
+            width: 800px;
+            height: auto;
+        }

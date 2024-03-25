@@ -1,0 +1,842 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+body
+{
+    color: #940000;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    min-height:100vh;
+    box-sizing: border-box;
+    background-image: url(style/background.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/* HEADER */
+
+header {
+    position: relative;
+    width: 100%;
+    background: #940000;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 200px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    float: left;
+    align-items: center;
+}
+
+nav {
+    float: right;
+    margin-right: 20px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* NAVIGATION BAR */
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    
+}
+
+nav ul li a {
+    display: block;
+    margin: 30px 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background: #610D0D;
+    transition: 0.5s
+}
+
+
+/* FOOTER */
+.footerContainer {
+    width: 100%;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    background: #940000;
+    padding: 10px 0px;
+}
+
+.footerContainer img {
+    width: 10%;
+    padding-bottom: 10px;
+    margin: auto;
+    display: block;
+    justify-content: center;
+}
+
+.footerContainer .footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+
+.footerContainer .footerNav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+/* GENERAL SETTINGS (USED IN MULTIPLE PAGES) */
+/* All Titles */
+
+.heading, .smallHeading {
+    width: 40%;
+    margin: 10px 0px;
+    position: relative;
+    transform: translate(-50%,0);
+    left: 50%;
+    background-image: url(style/pattern.jpg);
+    border-radius: 5px;
+}
+
+.heading {
+    width: 60%;
+    font-family: 'Coiny', cursive;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px #000;
+    margin-top: 30px;
+}
+
+.heading2 {
+    font-family: 'Coiny', cursive;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+
+.smallHeading {
+    font-family: 'Coiny', cursive;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+/* All Links */
+
+.bottomLink {
+    float: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bottomLink a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #610D0D;
+    padding: 10px 35px;
+    margin: 20px;
+    color: #fff;
+    box-shadow: 2px 2px #000;
+    border-radius: 5px;
+    border-style: inset;
+    border-color: #FFBFBF ;
+}
+
+.bottomLink a:hover {
+    background: #062842;
+    transition: 0.5s
+}
+
+#middle_button {
+    background-color: #AD1616;
+}
+
+
+/* INDEX PAGE */
+
+.myinfo {
+    width: 40%;
+    background-image: url(style/pattern.jpg);
+    display: flex;
+    margin: auto;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.textinfo {
+    width: 90%;
+    margin: 15px;
+    color: black;
+    text-align: center;
+}
+
+.textinfo p {
+    font-size: 15px;
+    color: #fff;
+}
+
+.info {
+    display: block;
+    float: right;
+    width: 30%;
+    filter: brightness(80%);
+}
+
+#aboutLinkOuter {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#aboutLink {
+    text-decoration: none;
+    background-color: #052B4A;
+    padding: 8px 15px;
+    color: #fff;
+    
+}
+
+#aboutLink:hover {
+    background: #3F6882;
+    transition: 0.5s
+}
+
+
+/* SIGN UP & LOG IN PAGE */
+
+.registerTitle {
+    text-align: center;
+    font-family: 'Coiny', cursive;
+    letter-spacing: 2px;
+}
+
+.registerFailed {
+    text-align: center;
+    background-color: #ff616b;
+    color: yellow;
+}
+
+.registerOK {
+    text-align: center;
+    background-color: #39edab;
+    color: #02523e;
+}
+
+/* Signup and Login forms */
+.registerForm {
+    width: 35%;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    box-shadow: 10px 10px rgba(173, 22, 22, 1);
+    border-radius: 10px;
+}
+
+.registerInfo {
+    width: 100%;
+    background-color: #FFF1F1;
+    color: #AD1616;  
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+
+.registerInfo input {
+    margin-bottom: 10px;
+}
+.registerContent {
+    position: relative;
+    left: 50%;
+    transform: translate(-150px);
+    margin: 20px 0px;
+}
+
+.registerContent label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.form_input {
+    width: 300px;
+    height: 20px;
+    border: 0;
+    border-bottom: 1px solid #AD1616;
+    margin-top: 5px;
+}
+
+.formButton {
+    text-align: center;
+}
+
+.formButton input {
+    margin-right: 10px;
+    padding: 5px 20px;
+    color: #fff;
+}
+
+.formButton #submitButton {
+    border-color: #1BB397;
+    background-color: #1BB397;
+}
+
+.formButton #resetButton {
+    border-color: #C7500D;
+    background-color: #C7500D;
+}
+
+/* other components on Signup & Login pages */
+#avatar {
+    width: 30%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+}
+
+.bottomLink #homeButton {
+    position: fixed;
+    top: 15%;
+    left: 0;
+    transform: translate(0, -15%);
+    background-image: url(style/pattern2.jpg);
+    color: #fff;
+    font-weight: 600;
+}
+
+.error {
+    background-color: #FF0000;
+    color: yellow;
+    font-weight: 500;
+    padding: 1px;
+    width: 60%;
+    font-size: 12px;
+    margin-bottom: -10px;
+}
+
+
+/* BIG MESSAGE IN THE SCREEN CENTER */
+
+#messageSection {
+    width: 60%;
+    font-family: 'Coiny', cursive;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px #000;
+    padding: 20px;
+    position:  absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: url(style/pattern.jpg);
+}
+
+/* LIST STYLE FOR FRIEND LIST AND ADD FRIEND LIST */
+
+.box {
+    width: 40%;
+    background-image: url(style/pattern2.jpg);
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    border-radius: 5px;
+    border: medium solid #fff;
+    box-shadow: 3px 3px #fff;
+    color: #fff;
+    font-size: 14px;
+}
+
+.left {
+    width: 70%;
+    font-weight: 600;
+}
+.right {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* PREVIOUS & NEXT BUTTONS */
+
+.pageStyle {
+    width: 40%;
+    margin: auto;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.pageStyle ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+
+}
+
+.pageStyle ul .page {
+    display: inline-block;
+    padding: 0.25em;
+}
+
+#previous, #next {
+    width: 30%;
+    text-align: center;
+    background-color: #b32222;
+    padding: 5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+#next {
+    float: right;
+}
+
+#previous a, #next a {
+    color: #fff;
+
+}
+
+.pageStyle ul .page .displayed {
+    text-decoration: none;
+
+}
+
+
+.friendButton {
+    background-color: #67CAF5;
+    color: #003179;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: medium ridge #fff;
+}
+
+
+/* ABOUT ME */
+
+.aboutmeBox {
+    width: 50%;
+    background-image: url(style/pattern2.jpg);
+    color: #fff;
+    margin: auto;
+    display: flex;
+    border: medium solid #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#icon {
+    font-size: 36px;
+    text-align: center;
+}
+
+.aboutmeBox .aboutmeInfo {
+    width: 80%;
+    margin-left: 10px;
+}
+
+.aboutmeBox img {
+    width: 30%;
+    height: 140px;
+}
+
+.questionSection {
+    width: 90%;
+    display: flex;
+    position: relative;
+    margin: auto;
+}
+
+.questionSection .subSection {
+    width: 50%;
+    margin: 10px;
+}
+
+.question {
+    background-image: url(style/pattern2.jpg);
+    border: solid;
+    box-shadow: 5px 5px #fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.discussionBoard {
+    width: 60%;
+    background-image: url(style/pattern2.jpg);
+    margin: auto;
+    padding: 15px;
+    border-radius: 5px;
+    border: medium solid #fff;
+}
+
+.discussionBoard p {
+    color: #fff;
+}
+
+#response {
+    width: 100%;
+}
+
+.assignmentDetails {
+    width: 70%;
+    background-image: url(style/pattern2.jpg);
+    border: medium solid #fff;
+    color: #fff;
+    display: flex;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.assignmentDetails img {
+    filter: brightness(100%);
+    width: 30%;
+    border: solid #fff;
+}
+
+.assignmentDetails .detailText {
+    width: 80%;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.assignmentDetails .detailText ul {
+    list-style-type: square;
+}
+.assignmentDetails .detailText ul li {
+    font-size: 16px;
+}
+
+.assignmentDetails .languageList button{
+    margin-right: 10px;
+    padding: 5px 20px;
+    color: #fff;
+}
+
+.assignmentDetails .languageList #language1 {
+    border-color: #413F87;
+    background-color: #413F87;
+}
+
+.assignmentDetails .languageList #language2 {
+    border-color: #C7500D;
+    background-color: #C7500D;
+}
+
+.assignmentDetails .languageList #language3 {
+    border-color: #007791;
+    background-color: #007791;
+}
+
+.assignmentDetails .languageList #language4 {
+    border-color: #bf9413;
+    background-color: #bf9413;
+}
+
+.assignmentDetails .smallText {
+    font-size: 13px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+#answerScr {
+    width: 95%;
+    padding: 0px 10px;
+}
+
+
+
+/* RESPONSIVE */
+
+/* RESPONSIVE NAVIGATION BAR */ 
+
+@media (max-width: 910px) {
+    .menu-toggle {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: none;
+        float:right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: black;
+        margin: 25px;
+    }
+    
+    .menu-toggle:before {
+        content:'\2630';
+        line-height: 40px;
+        color: #fff;
+    }
+    
+    .menu-toggle.active:before {
+        content: '\00d7';
+    }
+    
+    nav {
+        display: none;
+        margin: 0;
+    }
+    
+    nav.active {
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+    
+    nav.active ul {
+        display: block;
+        background-color: #940000;
+        position: relative;
+        z-index: 1;
+    }
+    
+    nav.active ul li a {
+        margin: 0;
+    }
+
+    .footerContainer .footerNav ul li a {
+        
+        padding-right: 10px;
+    } 
+}
+
+/* -------------------------------- */
+
+/* RESPONSIVE SIZE 1 */
+
+@media (max-width: 910px)  {
+    
+    /* General */
+
+    body {
+
+        font-size: 100%;
+    }
+
+    .heading {
+        width: 80%;
+        font-size: 25px;
+        padding: 5px 30px;
+    }
+
+
+    /* HOME PAGE */
+
+    .myinfo {
+        width: 80%;
+    }
+    
+    
+    /* ABOUT ME */
+    .aboutmeBox {
+        width: 90%;
+    }
+    
+    .aboutmeInfo {
+        width: 100%;
+    }
+    
+
+    .discussionBoard {
+        width: 80%;
+    }
+    
+
+    .sidePic {
+        display: none;
+    }
+    
+
+    /* BIG MESSAGE IN THE SCREEN CENTER */
+
+    #messageSection {
+        width: 90%;
+        position:  absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 0;
+    }
+
+
+    /* LOG IN and SIGN UP */
+
+    .registerForm {
+        width: 60%;
+        position: fixed;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+    }
+
+
+    /* ADD FRIENDS and FRIEND LIST pages */
+
+    .smallHeading {
+        width: 70%;
+    }
+
+    .box {
+        width: 70%;
+    }
+
+    #previous, #next {
+        font-size: 80%;
+        width: 40%;
+        text-align: center;
+    }
+
+
+/* ---------------------------------- */ 
+
+/* RESPONSIVE SIZE 2 */
+@media  (max-width: 780px) {
+    
+    /* General */
+
+    body {
+        font-size: 80%;
+    }
+    
+    .bottomLink a {
+        padding: 10px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    .heading {
+        width: 80%;
+        font-size: 25px;
+        padding: 5px 30px;
+    }
+
+    .footerContainer {
+        padding: 0;
+    }
+
+    .footerContainer img {
+        width: 20%;
+        padding-bottom: 10px;
+    }
+
+    .footerContainer .footerNav ul {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    .footerContainer .footerNav ul li {
+        margin: auto;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footerContainer .footerNav ul li a {
+        padding: 0;
+    }
+
+
+    /* HOME PAGE */
+
+    .myinfo {
+        width: 95%;
+    }
+    
+    /* ABOUT ME */
+
+    .aboutmeBox {
+        width: 80%;
+    }
+    
+    .aboutmeInfo {
+        width: 100%;
+    }
+
+    .questionSection .question p, ul li {
+        font-size: 100%;
+        font-weight: 400;
+        width: 100%;
+    }
+    
+    .discussionBoard {
+        width: 80%;
+    }
+    
+    .detail {
+        display: none;
+    }
+    
+    .assignmentDetails {
+        width: 95%;
+    }
+    
+    .assignmentDetails .detailText {
+        width: 100%;
+    }
+    
+
+    /* BIG MESSAGE IN THE SCREEN CENTER */
+
+    #messageSection {
+        width: 90%;
+        font-size: 25px;
+    }
+
+
+    /* LOG IN and SIGN UP */
+
+    .registerForm {
+        width: 80%;
+    }
+    
+
+    /* ADD FRIENDS and FRIEND LIST pages */
+
+    .smallHeading {
+        width: 90%;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .bottomLink a{
+        padding: 10px 10px;
+
+    }
+}
+

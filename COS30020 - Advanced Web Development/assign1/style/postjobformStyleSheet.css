@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #3e8e41;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    display: block;
+    margin-top: 5px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* semi-transparent black */
+    z-index: 999;
+    /* ensure the overlay is on top of other elements */
+    display: none;
+    /* hide the overlay by default */
+}
+
+#overlay.show {
+    display: flex;
+    /* show the overlay when the "show" class is added */
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    /* apply a blur effect to the background */
+}
+
+.content-container {
+    display: flex;
+    /* display the content container as a flex container */
+    flex-direction: column;
+    /* stack its children vertically */
+    align-items: center;
+    /* center its children horizontally */
+    justify-content: center;
+    /* center its children vertically */
+}
+
+.notification-box {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    color: green;
+    /* make the text green */
+    margin-bottom: 20px;
+    /* add space between the notification box and the button */
+}
+
+.button-container {
+    display: flex;
+    /* display the button container as a flex container */
+    justify-content: center;
+    /* center the button horizontally */
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8;
+    /* add a hover effect to the button */
+}
