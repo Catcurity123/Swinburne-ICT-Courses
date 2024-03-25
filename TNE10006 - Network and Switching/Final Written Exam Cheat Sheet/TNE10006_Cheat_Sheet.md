@@ -3,38 +3,22 @@
 
 **The OSI Reference Model**
 
-<<<<<<< HEAD
 ![OSI](/Picture/OSIModel.png)
-=======
-![OSI](./Picture/OSIModel.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 
 **The TCP/IP Protocol Model**
 
-<<<<<<< HEAD
 ![TCP/IP](/Picture/TCP_IP%20Model.png)
-=======
-![TCP/IP](./Picture/TCP_IP%20Model.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 
 **TCP/IP and OSI comparison**
 
-<<<<<<< HEAD
 ![compare](/Picture/TCPIP%20and%20OSI%20comparison.png)
-=======
-![compare](./Picture/TCPIP%20and%20OSI%20comparison.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 
 **Protocol Data Units**
 
-<<<<<<< HEAD
 ![PDU](/Picture/PDU.png)
-=======
-![PDU](./Picture/PDU.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 + Data - The general term for the PDU used at the application layer.
 
@@ -124,11 +108,7 @@ device that transmits includes the time duration that it needs for the transmiss
 ### 3.5 Frame Fields
 Framing breaks the stream into decipherable groupings, with control information inserted in the header and trailer as values in different fields.
 
-<<<<<<< HEAD
 ![Frame Fields](/Picture/DataFrame.png)
-=======
-![Frame Fields](./Picture/DataFrame.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 **1. Frame start and stop indicator flags**: used to identify the beginning and end limites of the frame.
 
@@ -147,11 +127,7 @@ Framing breaks the stream into decipherable groupings, with control information 
 
 According to Maximum Transmission Unit (MTU), the minimum Ethernet frame size is 64 bytes and maximum is 1518 bytes(1500 data and 18 Ethernet bits)
 
-<<<<<<< HEAD
 ![Ethernet Frame](/Picture/Ethernet%20Frame.png)
-=======
-![Ethernet Frame](./Picture/Ethernet%20Frame.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 **1. Preamble and Start Frame Delimiter Fields** are used to synchronize between sending and receiving devices. Preamble is 7 bytes SFD is 1 byte.
 
@@ -167,11 +143,7 @@ According to Maximum Transmission Unit (MTU), the minimum Ethernet frame size is
 
 ### 5.1 IPv4 header
 
-<<<<<<< HEAD
 ![IPv4](/Picture/IPv4_Packet-en.svg.png)
-=======
-![IPv4](./Picture/IPv4_Packet-en.svg.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 **1. Version - 4bits**: Identify the version of IP used. IPv4 = 4 (0100), IPv6 = 6 (0110)
 
@@ -239,7 +211,6 @@ That means an enterprise has 16 bits to use to make subnets.
 
 The remaining 64 bits can be used for hosts
 
-<<<<<<< HEAD
 ![IPv6](/Picture/IPv6.png)
 
 Here is an example of how to find the prefix.
@@ -249,17 +220,6 @@ Here is an example of how to find the prefix.
 Some more examples for further practice.
 
 ![example2](/Picture/practice%202.png)
-=======
-![IPv6](./Picture/IPv6.png)
-
-Here is an example of how to find the prefix.
-
-![Exampe](./Picture/Example.png)
-
-Some more examples for further practice.
-
-![example2](./Picture/practice%202.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 ## 7. TCP Connection Management
 Transmission Control Protocol - TCP is defined in RFC 793, containing the following characteristics:
@@ -275,11 +235,7 @@ Transmission Control Protocol - TCP is defined in RFC 793, containing the follow
 
 **TCP Segment**
 
-<<<<<<< HEAD
 ![TCP Segment](/Picture/TCP%20Segment.png)
-=======
-![TCP Segment](./Picture/TCP%20Segment.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 **1. Source port - 16 bits**: Specifies the port number on the sending device that is used for the communication. Typically selected randomly from 1024 - 65535.
 
@@ -314,11 +270,7 @@ Transmission Control Protocol - TCP is defined in RFC 793, containing the follow
 
 TCP's 3-way handshake is a mechanic that TCP use to initiate the conncetion in layer 4.
 
-<<<<<<< HEAD
 ![3-way hand](/Picture/TCP.png	)
-=======
-![3-way hand](./Picture/TCP.png	)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 **Sequence number** is based on number of bytes transmitted not segment, initial sequence number exchange in SYN and SYN-ACK packets.
 
@@ -327,7 +279,6 @@ TCP's 3-way handshake is a mechanic that TCP use to initiate the conncetion in l
 
 ![3-way hand1](./Picture/3way.png)
 
-<<<<<<< HEAD
 ![3-way hand2](/Picture/3way2.png)
 
 It is **important** to remember that sequence number and acknowledge number are measurement of bytes being sent not segment. and the ACK in data transmission is different from ACK in 3 way handshake
@@ -341,21 +292,6 @@ It is **important** to remember that sequence number and acknowledge number are 
 **4-way closure to close the connection**
 
 ![4-way closure](/Picture/4wayclosure.png)
-=======
-![3-way hand2](./Picture/3way2.png)
-
-It is **important** to remember that sequence number and acknowledge number are measurement of bytes being sent not segment. and the ACK in data transmission is different from ACK in 3 way handshake
-
-![import](./Picture/import.png)
-
-**Another key point of TCP is that it is full-duplex** meaning that both parties can send and receive data at the same time.
-
-![full-duplex](./Picture/full-duplex.png)
-
-**4-way closure to close the connection**
-
-![4-way closure](./Picture/4wayclosure.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 
 **8. System Architecture**
@@ -366,11 +302,7 @@ Workstation must be grouped by their physical proximity to a switch.
 
 To communicate among LANs, each segment must have separate interface on the backbone device.
 
-<<<<<<< HEAD
 ![Traditional Switched LANs](/Picture/hiere.png)
-=======
-![Traditional Switched LANs](./Picture/hiere.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 **Advantages**:
 
@@ -410,7 +342,6 @@ A VLAN are created to **logically group** devices based on their function, locat
 
 Layer 2 requires router to forward traffic to foreign network, therefore, inter-VLAN routing is a process for forwarding network traffic from one VLAN to another, using a router.
 
-<<<<<<< HEAD
 ![Inter-VLAN routing](/Picture/InterVlan.png)
 
 **Traditiona Routing** is when multiple interfaces on the router is used to supplement multiple VLANs
@@ -420,17 +351,6 @@ Layer 2 requires router to forward traffic to foreign network, therefore, inter-
 **Router-on-a-Stick** is when a single physical interface is divided into multiple logical interfaces to supplement the use of VLANs.
 
 ![Router on a stick](/Picture/Routeronastcik.png)
-=======
-![Inter-VLAN routing](./Picture/InterVlan.png)
-
-**Traditiona Routing** is when multiple interfaces on the router is used to supplement multiple VLANs
-
-![Traditional InterVlan](./Picture/traditionalVLAN.png)
-
-**Router-on-a-Stick** is when a single physical interface is divided into multiple logical interfaces to supplement the use of VLANs.
-
-![Router on a stick](./Picture/Routeronastcik.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 **8.4 LAN deisgn**
 
@@ -440,11 +360,7 @@ This involves dividing the network into **discrete** layer.
 
 The typical hierarchical design model is broken up into three layers: **Access**, **Distribution**, **Core**
 
-<<<<<<< HEAD
 ![Hierarchical Network Design](/Picture/hiere.png)
-=======
-![Hierarchical Network Design](./Picture/hiere.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 **Access Layer**: is the lowest layer in the hierarchy and provides connectivity between end-user devices, such as computers, printers, and IP phones. It is typically responsible for controlling user access to the network.
 
@@ -477,29 +393,17 @@ hierarchical layers)
 
 A low diameter ensures low and predictable latency between devices.
 
-<<<<<<< HEAD
 ![Network Dia](/Picture/Network%20Dia.png)
-=======
-![Network Dia](./Picture/Network%20Dia.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 **Bandwidth Aggregation** refers to the consideration over a specific bandwidth requirements of each part of the hierarchy.
 
 Links or Bandwidth Aggregation can be performed after considering the bandwidth requirements.
 
-<<<<<<< HEAD
 ![Bandwidth Agg](/Picture/bandwidth%20aggre.png)
 
 **Redundancy** refers to the backup in the event of a failure of the primary system or component.
 
 ![Redundancy](/Picture/redundan.png)
-=======
-![Bandwidth Agg](./Picture/bandwidth%20aggre.png)
-
-**Redundancy** refers to the backup in the event of a failure of the primary system or component.
-
-![Redundancy](./Picture/redundan.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 **8.6 Separate Networks and Converged Networks**
 
@@ -577,11 +481,7 @@ All devices in a service set share the same SSID (Service Set Identifier), it is
 
 **10.1 Service Sets: Independent Basic Service Set (IBSS)**: is a wireless network in which two or more wireless devices connect without using an AP, also called **ad hoc** network, it is usually used for file transfer (AirDrop).
 
-<<<<<<< HEAD
 ![adhoc](/Picture/adhoc.png)
-=======
-![adhoc](./Picture/adhoc.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 **10.2 Service Sets: Basic Service Set (BSS)**: is a kind of infrastructure service set in which clients connect to each other via an AP, but not directly to each other.
 
@@ -591,11 +491,7 @@ Wireless devices request to associate with the BSS, and those which have associa
 
 The area around an AP where its signal is usable is called a **Basic Service Area (BSA)**.
 
-<<<<<<< HEAD
 ![BSS](/Picture/BSS.png)
-=======
-![BSS](./Picture/BSS.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
 **10.3 Service Sets: Extended Service Sets (ESS)**: is used to create larger wireless LANs beyond the range of a single AP. APs with their own BSSs are connected by a **wired network**.
 
@@ -605,9 +501,5 @@ The area around an AP where its signal is usable is called a **Basic Service Are
 
 Clients in ESS can pass between APs without having to reconnect, providing a seamless WI-FI experience when moving between APs which is called **roaming**.
 
-<<<<<<< HEAD
 ![ESS](/Picture/ESS.png)
-=======
-![ESS](./Picture/ESS.png)
->>>>>>> 811b2283a9cf9d0668baf77ae0cd719bfb809328
 
