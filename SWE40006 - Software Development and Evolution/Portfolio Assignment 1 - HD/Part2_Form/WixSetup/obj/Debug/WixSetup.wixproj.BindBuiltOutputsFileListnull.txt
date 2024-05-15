@@ -1,0 +1,2 @@
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\WixSetup\bin\Debug\WixSetup.msi
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\WixSetup\bin\Debug\WixSetup.wixpdb

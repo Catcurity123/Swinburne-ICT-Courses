@@ -1,0 +1,12 @@
+C:\Users\LUAN\source\repos\Assignment_1\Part2_Form\Part2_Form\Part2_Dependency\bin\Debug\Part2_Dependency.dll
+C:\Users\LUAN\source\repos\Assignment_1\Part2_Form\Part2_Form\Part2_Dependency\bin\Debug\Part2_Dependency.pdb
+C:\Users\LUAN\source\repos\Assignment_1\Part2_Form\Part2_Form\Part2_Dependency\obj\Debug\Part2_Dependency.csprojAssemblyReference.cache
+C:\Users\LUAN\source\repos\Assignment_1\Part2_Form\Part2_Form\Part2_Dependency\obj\Debug\Part2_Dependency.csproj.CoreCompileInputs.cache
+C:\Users\LUAN\source\repos\Assignment_1\Part2_Form\Part2_Form\Part2_Dependency\obj\Debug\Part2_Dependency.dll
+C:\Users\LUAN\source\repos\Assignment_1\Part2_Form\Part2_Form\Part2_Dependency\obj\Debug\Part2_Dependency.pdb
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\Part2_Dependency\bin\Debug\Part2_Dependency.dll
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\Part2_Dependency\bin\Debug\Part2_Dependency.pdb
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\Part2_Dependency\obj\Debug\Part2_Dependency.csprojAssemblyReference.cache
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\Part2_Dependency\obj\Debug\Part2_Dependency.csproj.CoreCompileInputs.cache
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\Part2_Dependency\obj\Debug\Part2_Dependency.dll
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\Part2_Dependency\obj\Debug\Part2_Dependency.pdb

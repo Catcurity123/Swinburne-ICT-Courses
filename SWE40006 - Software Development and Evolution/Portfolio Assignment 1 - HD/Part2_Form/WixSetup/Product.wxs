@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <!-- Product Information Section -->
+  <Product Id="A01099BA-1389-49CB-8437-6172D615919F"
+           Name="WixSetup"
+           Language="1033"
+           Version="1.0.0.0"
+           Manufacturer="ViLuanDang"
+           UpgradeCode="27C83255-7718-45A2-8DBD-909AEB73F95E">
+
+    <!-- Package Information Section -->
+    <Package InstallerVersion="200"
+             Compressed="yes"
+             InstallScope="perMachine" />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <!-- Cab file contains all the files for the application, if this is yes then all the file is contained within MSI file -->
+    <MediaTemplate  EmbedCab="yes"/>
+
+    <!-- Feature Information Section -->
+    <Feature Id="ProductFeature" Title="WixSetup" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+      <ComponentGroupRef Id="Files_files" />
+    </Feature>
+
+    <!-- Set property for customize directory-->
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+    <!-- Use WixUI for customize directory-->
+    <UIRef Id ="WixUI_InstallDir"/>
+
+  </Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="WixSetup" >
+          <Directory Id="Files" Name="Files" />
+        </Directory>
+      </Directory>
+    </Directory>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <!-- Application component -->
+      <Component Id="Part2_Form.exe" Guid="3B4B2634-FB67-43B0-8E9C-0F58ECE82744" >
+        <File Id="Part2_Form.exe" Name="Part2_Form.exe" Source="$(var.Part2_Form.TargetDir)Part2_Form.exe"></File>
+      </Component>
+
+      <!-- Dependency component -->
+      <Component Id="Part2_Dependency.dll" Guid="45361aba-e09e-415b-8a2e-057b77ba41b9">
+        <File Id="Part2_Dependency.dll" Name="Part2_Dependency.dll" Source="$(var.Part2_Form.TargetDir)Part2_Dependency.dll" />
+      </Component>
+
+      <Component Id="Part2_Dependency_2.dll" Guid="BC138ED9-9842-45BA-AABD-B2E49F3E57C1">
+        <File Id="Part2_Dependency_2.dll" Name="Part2_Dependency_2.dll" Source="$(var.Part2_Form.TargetDir)Part2_Dependency_2.dll" />
+      </Component>
+      
+    </ComponentGroup>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="Files_files" Directory="Files">
+      <!-- File component -->
+      <Component Id="Content.txt" Guid="aea868c1-2d18-400d-88fa-e506b16ef130">
+        <File Id="Content.txt" Name="Content.txt" Source="$(var.Part2_Form.TargetDir)Files\Content.txt" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+  
+  
+</Wix>

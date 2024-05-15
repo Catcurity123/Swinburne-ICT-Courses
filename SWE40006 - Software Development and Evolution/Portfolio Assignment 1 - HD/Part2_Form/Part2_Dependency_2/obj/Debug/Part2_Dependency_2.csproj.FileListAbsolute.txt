@@ -1,0 +1,6 @@
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\Part2_Dependency_2\bin\Debug\Part2_Dependency_2.dll
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\Part2_Dependency_2\bin\Debug\Part2_Dependency_2.pdb
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\Part2_Dependency_2\obj\Debug\Part2_Dependency_2.csprojAssemblyReference.cache
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\Part2_Dependency_2\obj\Debug\Part2_Dependency_2.csproj.CoreCompileInputs.cache
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\Part2_Dependency_2\obj\Debug\Part2_Dependency_2.dll
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\Part2_Dependency_2\obj\Debug\Part2_Dependency_2.pdb

@@ -1,0 +1,8 @@
+obj\Debug\Product.wixobj
+C:\Users\LUAN\source\repos\Assignment_1\Part2_Form\Part2_Form\WixSetup\bin\Debug\WixSetup.msi
+C:\Users\LUAN\source\repos\Assignment_1\Part2_Form\Part2_Form\WixSetup\bin\Debug\WixSetup.wixpdb
+obj\Debug\WixSetup.wixproj.BindContentsFileListnull.txt
+obj\Debug\WixSetup.wixproj.BindOutputsFileListnull.txt
+obj\Debug\WixSetup.wixproj.BindBuiltOutputsFileListnull.txt
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\WixSetup\bin\Debug\WixSetup.msi
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\WixSetup\bin\Debug\WixSetup.wixpdb

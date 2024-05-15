@@ -1,0 +1,4 @@
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\Part2_Form\bin\Debug\Files\Content.txt
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\Part2_Form\bin\Debug\Part2_Dependency.dll
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\Part2_Form\bin\Debug\Part2_Dependency_2.dll
+C:\Users\LUAN\source\repos\Part2_Form\Part2_Form\Part2_Form\bin\Debug\Part2_Form.exe
