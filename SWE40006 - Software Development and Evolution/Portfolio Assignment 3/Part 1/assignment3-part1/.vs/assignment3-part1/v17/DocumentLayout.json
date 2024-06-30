@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LUAN\\Desktop\\Course\\Summer_2024\\SWE40006\\Assignment\\Assignment 3 - Portfolio\\Part 1\\assignment3-part1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3EDA30-3200-45AD-A22E-4E2607F0EE0F}|assignment3-part1\\assignment3-part1.csproj|c:\\users\\luan\\desktop\\course\\summer_2024\\swe40006\\assignment\\assignment 3 - portfolio\\part 1\\assignment3-part1\\assignment3-part1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F3EDA30-3200-45AD-A22E-4E2607F0EE0F}|assignment3-part1\\assignment3-part1.csproj|solutionrelative:assignment3-part1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LUAN\\Desktop\\Course\\Summer_2024\\SWE40006\\Assignment\\Assignment 3 - Portfolio\\Part 1\\assignment3-part1\\assignment3-part1\\Program.cs",
+              "RelativeDocumentMoniker": "assignment3-part1\\Program.cs",
+              "ToolTip": "C:\\Users\\LUAN\\Desktop\\Course\\Summer_2024\\SWE40006\\Assignment\\Assignment 3 - Portfolio\\Part 1\\assignment3-part1\\assignment3-part1\\Program.cs",
+              "RelativeToolTip": "assignment3-part1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T16:06:51.505Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
